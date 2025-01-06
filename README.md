@@ -39,7 +39,8 @@ O projeto **BookNest** utiliza uma combinação de tecnologias modernas para gar
 - **Ver Descrição do Contribuinte**: Acesso à descrição e informações do contribuinte.
 - **Solicitar Permissão ao Administrador**: Usuários podem solicitar ao administrador permissão para se tornarem contribuidores.
 - **Pesquisar Livros**: Usuários podem pesquisar Livros Desejados Através de seus Nomes ou Através do Escritores do Livros.
-- 
+
+
 ### Para Contribuintes
 - **Postar Livros**: Contribuidores podem adicionar novos livros à plataforma.
 - **Editar Livros**: Capacidade de editar livros postados.
