@@ -1,0 +1,422 @@
+@import url('https://fonts.cdnfonts.com/css/stencilla');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+/** ( > * ) pega todos so elementos filhos dentro desse elemento **/
+.containers-popups
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    cursor: pointer;
+    z-index: 1;
+    display: none;
+}
+.popup
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    z-index: 2;
+    width: 90%;
+    height: 90%;
+    display: none;
+}
+.popup > .container-background
+{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.popup > .container-background > .container-line
+{
+    background-color:  #121212;
+    width: 99%;
+    height: 98%;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.popup > .container-background > .container-line > .informacoes
+{
+    width: 99%;
+    height: 97%;
+    background: white;
+    border-radius: 10px;
+}
+.popup > .container-background > .container-line > .informacoes > .elements
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    padding: 5px;
+    font-family: 'Montserrat';
+}
+.popup > .container-background > .container-line > .informacoes > .elements > .title-for-informacoes
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+.popup > .container-background > .container-line > .informacoes > .elements > .title-for-informacoes > .title
+{
+    background: white;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 20px;
+}
+.popup > .container-background > .container-line > .informacoes > .elements > .separator
+{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    height: 100%;
+}
+.popup > .container-background > .container-line > .informacoes > .elements > .separator > .Aba
+{
+    padding: 10px;
+    width: 50%;
+}
+.popup > .container-background > .container-line > .informacoes > .elements > .separator > .line-separator
+{
+    display: block;
+    width: 5px;
+    background: black;
+    height: 90%;
+}
+.popup > .container-background > .container-line > .informacoes > .elements > .separator > .Aba > .containers-Abas
+{
+    height: 100%;
+}
+.popup > .container-background > .container-line > .informacoes > .elements > .separator > .Aba > .containers-Abas > .title-containers-Abas
+{
+    width: 100%;
+}
+.popup > .container-background > .container-line > .informacoes > .elements > .separator > .Aba > .containers-Abas > .title-containers-Abas > h3
+{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+.popup > .container-background > .container-line > .informacoes > .elements > .separator > .Aba > .containers-Abas > .title-containers-Abas > h3::before,
+.popup > .container-background > .container-line > .informacoes > .elements > .separator > .Aba > .containers-Abas > .title-containers-Abas > h3::after
+{
+    content: "";
+    display: block;
+    width: 15%;
+    height: 2px;
+    background: black;
+    border-radius: 10px;
+}
+.popup > .container-background > .container-line > .informacoes > .elements > .separator > .Aba > .containers-Abas
+{
+    height: 100px;
+}
+.popup > .container-background > .container-line > .informacoes > .elements > .Desenv-container
+{
+    width: 100%;
+    max-width: 90%;
+    height: 100%;
+    max-height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    margin: auto;
+}
+.popup > .container-background > .container-line > .informacoes > .elements > .Desenv-container > i
+{
+    font-size: 300px;
+    color: gray;
+    opacity: 0.7;
+}
+.popup > .container-background > .container-line > .informacoes > .elements > .Desenv-container > p
+{
+    font-family: 'stencilla';
+    font-size: 50px;
+    text-transform: uppercase;
+}
+.link-icon-title
+{
+    text-decoration: none;
+}
+#Facebook
+{
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(to right, #3b5998, #8b9dc3); /** referente ao Aplicativo Facebook **/
+    font-size: 80px;
+}
+#Twitter
+{
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(to right, #1DA1F2, #a6d4fa); /** referente ao Aplicativo Twitter **/
+    font-size: 80px;
+}
+#Instagram
+{
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045); /** referente ao Aplicativo Instagram **/
+    font-size: 80px;
+}
+#LinkedIn
+{
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(to right, #0077B5, #00a0dc); /** referente ao Aplicativo LinkedIn **/
+    font-size: 80px;
+}
+#YouTube
+{
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(to right, #FF0000, #ff6a6a); /** referente ao Aplicativo YouTube **/
+    font-size: 80px;
+}
+#Pinterest
+{
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(to right, #bd081c, #ff4a6e); /** referente ao Aplicativo Pinterest **/
+    font-size: 80px;
+}
+#Snapchat
+{
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(to right, #fffc00, #ffffff); /** referente ao Aplicativo Snapchat **/
+    font-size: 80px;
+}
+#TikTok
+{
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(to right, #69C9D0, #EE1D52); /** referente ao Aplicativo TikTok **/
+    font-size: 80px;
+}
+#Login
+{
+    width: 30%;
+}
+.popup > .container-background > .container-line > .informacoes > .elements > .form-login
+{
+    width: 100%;
+    height: 100%;
+    max-height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    margin: auto;
+}
+.popup > .container-background > .container-line > .informacoes > .elements > .form-login > .title
+{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+.popup > .container-background > .container-line > .informacoes > .elements > form > .inputs
+{
+    width: 90%;
+    height: 10%;
+    border: 2px groove #121212;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+}
+.popup > .container-background > .container-line > .informacoes > .elements >.form-login > .inputs > i
+{
+    font-size: 25px;
+    position: absolute;
+    top: 6px;
+    left: 8px;
+    cursor: pointer;
+}
+.popup > .container-background > .container-line > .informacoes > .elements >.form-login > .inputs > #eye-open,#eye-close
+{
+    left: 90%;
+}
+.popup > .container-background > .container-line > .informacoes > .elements >.form-login > .inputs > #eye-close
+{
+    display: none;
+}
+
+.popup > .container-background > .container-line > .informacoes > .elements > form > .inputs > input
+{
+    width: 80%;
+    height: 100%;
+    text-align: center;
+    font-size: 15px;
+    outline: none;
+    border: none;
+    font-family: 'Montserrat';
+}
+.popup > .container-background > .container-line > .informacoes > .elements > form > .submit
+{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.popup > .container-background > .container-line > .informacoes > .elements > form > .submit > input[type=submit]
+{
+    width: 50%;
+    height: 40px;
+    background: #121212;
+    color: white;
+    outline: none;
+    border: none;
+    font-family: 'Montserrat';
+    border-radius: 10px;
+    cursor: pointer;
+}
+.Cadastrar-form,.Login-form
+{
+    text-decoration: underline;
+    color: navy;
+}
+#Cadastrar
+{
+    display: block;
+    width: 30%;
+    left: -100%;
+    transition: 1s;
+}
+.popup > .container-background > .container-line > .informacoes > .elements > .form-cadastrar
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+.popup > .container-background > .container-line > .informacoes > .elements > .form-cadastrar > .title
+{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+.popup > .container-background > .container-line > .informacoes > .elements > .form-cadastrar > .cadastrar-info
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    max-height: 90%;
+    margin: auto;
+}
+.popup > .container-background > .container-line > .informacoes > .elements > .form-cadastrar > .cadastrar-info > .inputs
+{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    border: 2px solid #121212;
+    border-radius: 10px;
+    height: 10%;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.popup > .container-background > .container-line > .informacoes > .elements > .form-cadastrar > .cadastrar-info > .inputs > input
+{
+    width: 80%;
+    height: 100%;
+    text-align: center;
+    border: none;
+    outline: none;
+    font-family: 'Montserrat';
+}
+.popup > .container-background > .container-line > .informacoes > .elements > .form-cadastrar > .cadastrar-info > .inputs > i
+{
+    font-size: 25px;
+    position: absolute;
+    top: 6px;
+    left: 8px;
+    cursor: pointer;
+}
+.popup > .container-background > .container-line > .informacoes > .elements > .form-cadastrar > .cadastrar-info > .inputs > #eye-open,#eye-close
+{
+    left: 90%;
+}
+.popup > .container-background > .container-line > .informacoes > .elements > .form-cadastrar > .cadastrar-info > .inputs > #eye-close
+{
+    display: none;
+}
+.popup > .container-background > .container-line > .informacoes > .elements > .form-cadastrar > .cadastrar-info > .submit
+{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+.popup > .container-background > .container-line > .informacoes > .elements > .form-cadastrar > .cadastrar-info > .submit > input[type=submit]
+{
+    width: 50%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    font-family: 'Montserrat';
+    border: none;
+    background: #121212;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}

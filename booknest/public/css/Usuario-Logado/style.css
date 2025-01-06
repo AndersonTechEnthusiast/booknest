@@ -1,0 +1,208 @@
+@import url('https://fonts.cdnfonts.com/css/stencilla');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Timmana&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300..700&family=Timmana&display=swap');
+html{scroll-behavior: smooth;}
+body{background-color: #202020;font-family: 'Montserrat';color: white;padding: 0;margin: 0;box-sizing: border-box;}
+.etinerario-BookNest{background: #121212;width: 100%;box-shadow: 2px 2px 5px 2px white;}
+.etinerario-BookNest > nav{width: 100%;height: 80px;}
+.etinerario-BookNest > nav > ul,li{display: flex;align-items: center;justify-content: space-between;flex-wrap: nowrap;flex-direction: row;}
+.etinerario-BookNest > nav > ul{padding: 0;margin: 0;}
+.etinerario-BookNest > nav > ul , 
+.etinerario-BookNest > nav > ul > li{height: 100%;}
+.options-category{display: flex;align-items: center;justify-content: space-between;flex-wrap: nowrap;flex-direction: column;height: 100%;width: 130px;cursor: pointer;}
+.options-category:hover{background: white; color: black;}
+.options-category > #Ficção{padding: 5px;width: 50px;height: 50px;background-image: url(../../img/Usuario-Logado/Ficção-white.png);background-repeat: no-repeat;background-size: cover;background-position: center;}
+.options-category:hover > #Ficção{padding: 5px;width: 50px;height: 50px;background-image: url(../../img/Usuario-Logado/Ficção-Black.png);background-repeat: no-repeat;background-size: cover;background-position: center;}
+.options-category > #Não-Ficção{padding: 5px;width: 50px;height: 50px;background-image: url(../../img/Usuario-Logado/Não-Ficção-white.png);background-repeat: no-repeat;background-size: cover;background-position: center;}
+.options-category:hover > #Não-Ficção{padding: 5px;width: 50px;height: 50px;background-image: url(../../img/Usuario-Logado/Não-Ficção-Black.png);background-repeat: no-repeat;background-size: cover;background-position: center;}
+.options-category > #Poesia{padding: 5px;width: 50px;height: 50px;background-image: url(../../img/Usuario-Logado/Poesia-white.png);background-repeat: no-repeat;background-size: cover;background-position: center;}
+.options-category:hover > #Poesia{padding: 5px;width: 50px;height: 50px;background-image: url(../../img/Usuario-Logado/Poesia-Black.png);background-repeat: no-repeat;background-size: cover;background-position: center;}
+.options-category > #Drama{padding: 5px;width: 50px;height: 50px;background-image: url(../../img/Usuario-Logado/Drama-white.png);background-repeat: no-repeat;background-size: cover;background-position: center;}
+.options-category:hover > #Drama{padding: 5px;width: 50px;height: 50px;background-image: url(../../img/Usuario-Logado/Drama-Black.png);background-repeat: no-repeat;background-size: cover;background-position: center;}
+.options-category > #Conto{padding: 5px;width: 50px;height: 50px;background-image: url(../../img/Usuario-Logado/Conto-White.png);background-repeat: no-repeat;background-size: cover;background-position: center;}
+.options-category:hover > #Conto{padding: 5px;width: 50px;height: 50px;background-image: url(../../img/Usuario-Logado/Conto-Black.png);background-repeat: no-repeat;background-size: cover;background-position: center;}
+.options-category > #InfantoJuvenil{padding: 5px;width: 50px;height: 50px;background-image: url(../../img/Usuario-Logado/Infanto-White.png);background-repeat: no-repeat;background-size: cover;background-position: center;}
+.options-category:hover > #InfantoJuvenil{padding: 5px;width: 50px;height: 50px;background-image: url(../../img/Usuario-Logado/Infanto-Black.png);background-repeat: no-repeat;background-size: cover;background-position: center;}
+.options-category > #NovelaGrafica{padding: 5px;width: 50px;height: 50px;background-image: url(../../img/Usuario-Logado/Novela-Grafica-White.png);background-repeat: no-repeat;background-size: cover;background-position: center;}
+.options-category:hover > #NovelaGrafica{padding: 5px;width: 50px;height: 50px;background-image: url(../../img/Usuario-Logado/Novela-Grafica-Black.png);background-repeat: no-repeat;background-size: cover;background-position: center;}
+.options-category > #Humor{padding: 5px;width: 50px;height: 50px;background-image: url(../../img/Usuario-Logado/Humor-White.png);background-repeat: no-repeat;background-size: cover;background-position: center;}
+.options-category:hover > #Humor{padding: 5px;width: 50px;height: 50px;background-image: url(../../img/Usuario-Logado/Humor-Black.png);background-repeat: no-repeat;background-size: cover;background-position: center;}
+.options-category > #GuiaDeViajem{padding: 5px;width: 50px;height: 50px;background-image: url(../../img/Usuario-Logado/Guia-de-Viagem-White.png);background-repeat: no-repeat;background-size: cover;background-position: center;}
+.options-category:hover > #GuiaDeViajem{padding: 5px;width: 50px;height: 50px;background-image: url(../../img/Usuario-Logado/Guia-de-Viagem-Black.png);background-repeat: no-repeat;background-size: cover;background-position: center;}
+.options-category > #Ensaio{padding: 5px;width: 50px;height: 50px;background-image: url(../../img/Usuario-Logado/Ensaio-White.png);background-repeat: no-repeat;background-size: cover;background-position: center;}
+.options-category:hover > #Ensaio{padding: 5px;width: 50px;height: 50px;background-image: url(../../img/Usuario-Logado/Ensaio.png);background-repeat: no-repeat;background-size: cover;background-position: center;}
+.slides-books{position: relative;top: 0;left: 0;width: 100%;height: 500px;overflow-y: hidden;overflow-x: hidden;margin: 5px auto;}
+.slides{position: absolute;top: 0;left: 100%;width: 100%;height: 100%;}
+.slides:first-child{position: absolute;top: 0;left: 0;width: 100%;height: 100%;}
+#slides-1{background-color: #FF5733;display: flex;align-items: center;justify-content: center;}
+#slides-2{background-color: #85C1E9;display: flex;align-items: center;justify-content: center;}
+#slides-3{background-color: #8E44AD;display: flex;align-items: center;justify-content: center;}
+#slides-4{background-color: #F39C12;display: flex;align-items: center;justify-content: center;}
+#slides-5{background-color: #1ABC9C;display: flex;align-items: center;justify-content: center;}
+#slides-6{background-color: #2ECC71;display: flex;align-items: center;justify-content: center;}
+#slides-7{background-color: #E74C3C;display: flex;align-items: center;justify-content: center;}
+#slides-8{background-color: #3498DB;display: flex;align-items: center;justify-content: center;}
+#slides-9{background-color: #9B59B6;display: flex;align-items: center;justify-content: center;}
+#slides-10{background-color: #58D68D;display: flex;align-items: center;justify-content: center;}
+#slides-11{background-color: #34495E;display: flex;align-items: center;justify-content: center;}
+#slides-12{background-color: #16A085;display: flex;align-items: center;justify-content: center;}
+#slides-13{background-color: #F4D03F;display: flex;align-items: center;justify-content: center;}
+#slides-14{background-color: #273746;display: flex;align-items: center;justify-content: center;}
+#slides-15{background-color: #7D3C98;display: flex;align-items: center;justify-content: center;}
+#slides-16{background-color: #C0392B;display: flex;align-items: center;justify-content: center;}
+#slides-17{background-color: #BDC3C7;display: flex;align-items: center;justify-content: center;}
+#slides-18{background-color: #7F8C8D;display: flex;align-items: center;justify-content: center;}
+#slides-19{background-color: #D35400;display: flex;align-items: center;justify-content: center;}
+#slides-20{background-color: #2980B9;display: flex;align-items: center;justify-content: center;}
+#slides-21{background-color: #AAB7B8;display: flex;align-items: center;justify-content: center;}
+#slides-22{background-color: #633974;display: flex;align-items: center;justify-content: center;}
+#slides-23{background-color: #F1948A;display: flex;align-items: center;justify-content: center;}
+#slides-24{background-color: #45B39D;display: flex;align-items: center;justify-content: center;}
+#slides-25{background-color: #6E2C00;display: flex;align-items: center;justify-content: center;}
+#slides-26{background-color: #1F618D;display: flex;align-items: center;justify-content: center;}
+#slides-27{background-color: #D68910;display: flex;align-items: center;justify-content: center;}
+#slides-28{background-color: #641E16;display: flex;align-items: center;justify-content: center;}
+#slides-29{background-color: #7B241C;display: flex;align-items: center;justify-content: center;}
+#slides-30{background-color: #2E4053;display: flex;align-items: center;justify-content: center;}
+#slides-31{background-color: #E8DAEF;display: flex;align-items: center;justify-content: center;}
+#slides-32{background-color: #17A589;display: flex;align-items: center;justify-content: center;}
+#slides-33{background-color: #C7C7C7;display: flex;align-items: center;justify-content: center;}
+#slides-34{background-color: #B03A2E;display: flex;align-items: center;justify-content: center;}
+#slides-35{background-color: #2874A6;display: flex;align-items: center;justify-content: center;}
+#slides-36{background-color: #CA6F1E;display: flex;align-items: center;justify-content: center;}
+#slides-37{background-color: #A569BD;display: flex;align-items: center;justify-content: center;}
+#slides-38{background-color: #4A235A;display: flex;align-items: center;justify-content: center;}
+#slides-39{background-color: #D7DBDD;display: flex;align-items: center;justify-content: center;}
+#slides-40{background-color: #CB4335;display: flex;align-items: center;justify-content: center;}
+#slides-41{background-color: #76D7C4;display: flex;align-items: center;justify-content: center;}
+#slides-42{background-color: #1E8449;display: flex;align-items: center;justify-content: center;}
+#slides-43{background-color: #F8C471;display: flex;align-items: center;justify-content: center;}
+#slides-44{background-color: #935116;display: flex;align-items: center;justify-content: center;}
+#slides-45{background-color: #839192;display: flex;align-items: center;justify-content: center;}
+#slides-46{background-color: #17202A;display: flex;align-items: center;justify-content: center;}
+#slides-47{background-color: #CD6155;display: flex;align-items: center;justify-content: center;}
+#slides-48{background-color: #E59866;display: flex;align-items: center;justify-content: center;}
+#slides-49{background-color: #F9E79F;display: flex;align-items: center;justify-content: center;}
+#slides-50{background-color: #5D6D7E;display: flex;align-items: center;justify-content: center;}
+.buttons-circle-slides{width: 100%;max-width: 90%;display: flex;align-items: center;justify-content: space-between;flex-wrap: wrap;flex-direction: row;margin: 10px auto;}
+.circle-slides-activador{width: 10px;height: 10px;border: 1px groove white;border-radius: 50%;background: transparent;}
+#circle-activador-1{background: white;}
+.container-shadow-text-slide{position: absolute;top: 0;left: 0;width: 60%;height: 100%;background: rgba(0,0,0,0.7);display: flex;align-items: center;justify-content: flex-start;clip-path: polygon(0 -200%, 0 100%, 100% 100%); /* Define um triângulo retângulo */}
+.container-shadow-text-slide > span{height: 100%;width: 60%;display: flex;align-items: center;justify-content: space-between;flex-direction: column;text-align: center;/* clip-path: polygon(0 -200%, 0 100%, 100% 100%); Define um triângulo retângulo */}
+.container-arrow{width: 100%;max-width: 40%;display: flex;align-items: flex-start;flex-wrap: nowrap;justify-content: center;flex-direction: row;box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.7);margin: 20px auto;}
+.container-arrow > .container-Welcome{width: 100%; display: flex;align-items: center;flex-wrap: nowrap;flex-direction: row;padding: 10px;text-align: center;}
+.title-category{width: 100%;max-width: 95%; margin-top: 90px; margin-right: auto; margin-left: auto; margin-bottom: 0px;}
+.title-category > h3{position: relative;top: 0;left: 0;width: 100%;display: flex;align-items: center;justify-content: space-between;flex-wrap: nowrap;flex-direction: row;}
+.title-category > h3::after ,
+.title-category > h3::before{content: "";display: block;width: 40%;height: 5px;background: white;border-radius: 10px;}
+.link-sumario-digit{text-decoration: none;color: white;}
+.container-Posts{width: 100%;max-width: 95%;display: flex;align-items: center;justify-content: space-between;flex-wrap: wrap;min-height: 500px;max-height: 1000px;overflow-y: auto;overflow-x: hidden;padding: 10px;margin: 10px auto;}
+.container-mensagem-extendido{position: relative;top: 0;left: 0;max-height: 1000px;}
+.container-mensagem-extendido > .mensagem-barra-exedido{position: absolute;top: 100%;left: 50%;transform: translate(-50% , 0%);width: 100%;display: flex;align-items: center;justify-content: center;flex-wrap: nowrap;flex-direction: row;margin: 20px auto;}
+.container-Posts::-webkit-scrollbar{width: 5px;}
+.container-Posts::-webkit-scrollbar-track{width: 5px;background: transparent;}
+.container-Posts::-webkit-scrollbar-thumb{width: 5px;border: 2px groove white;background-color: #202020;border-radius: 10px;cursor: pointer;}
+.container-Posts > a {text-decoration: none; color: white; margin: auto;}
+.container-Posts > a > .Posts{position: relative;top: 0;left: 0;width: 400px;height: 400px;margin: 20px auto;}
+.container-Posts > a > .Posts > .Front{border: 2px solid white;width: 100%;height: 100%;background: #181818;display: flex;align-items: center;justify-content: space-between;flex-direction: column;padding: 5px;margin: 5px 0;}
+.container-Posts > a > .Posts > .Back{border: 2px solid white;width: 100%;height: 100%;background: #181818;display: flex;align-items: center;justify-content: space-between;flex-direction: column;padding: 5px;transform: rotateY(-180deg);margin: 5px 0;}
+.container-Posts > a > .Posts > .Back > img{width: 100%;height: 100%;}
+.container-Posts > a > .Posts > .Front ,
+.container-Posts > a > .Posts > .Back{position: absolute;top: 0;left: 0;backface-visibility: hidden;cursor: pointer;transition: 1s;}
+.container-Posts > a > .Posts > .Front{z-index: 1;}
+.container-Posts > a > .Posts:hover > .Front{transition: 1s;transform: rotateY(180deg);}
+.container-Posts > a > .Posts:hover > .Back{transition: 1s;transform: rotateY(0);}
+.container-Posts > a > .Posts > .Front > .title-posts{width: 100%;max-width: 50%;height: 10%;display: flex;align-items: center;justify-content: center;border-top: none;border-right: none;border-left: none;border-bottom: 2px groove white;text-align: center;text-transform: capitalize;margin-top: 0;margin-right: none;margin-left: none;margin-bottom: 10px;}
+.container-Posts > a > .Posts > .Front > .image-posts{width: 100%;height: 70%;}
+.container-Posts > a > .Posts > .Front > .image-posts > img{width: 100%;height: 100%;}
+.container-Posts > a > .Posts > .Front > .infos-posts{width: 100%;height: 10%;}
+.mensagem-barra-exedido > h3{width: 100%;max-width: 95%;display: flex;align-items: center;justify-content: space-between;flex-wrap: nowrap;flex-direction: row;margin: 0 auto;}
+.mensagem-barra-exedido > h3::after , 
+.mensagem-barra-exedido > h3::before{content: "";display: block;height: 5px;width: 40%;background: white;border-radius: 5px;}
+footer{position: relative; top: 100px; right: 0; width: 100%; height: 600px; background-image: url(../../img/welcome/Back-Img.jpg); background-position: center; background-repeat: no-repeat; background-attachment: fixed; background-size: cover; font-family:'stencilla';}
+footer > div{position: absolute;top: 50%;left: 50%;transform: translate(-50% , -50%); z-index: 1;}
+footer::after{content: "";position: absolute;width: 100%;height: 100%;background: rgba(0,0,0,0.7);}
+footer > div > p{font-size: 140px;}
+.Perfil{width: 30%;text-align: center;}
+.Perfil > #Perfil-link > label{cursor: pointer;}
+.Perfil > #Perfil-link > label > img{width: 100px;height: 100px;border-radius: 50%;}
+.Perfil > input[type=file]{display: none;}
+.hidden{display: none;}
+.loading-interative{position: fixed;top: 0;left: 0;width: 100%;height: 100%;background: rgba(0,0,0,0.7);z-index: 20;display: flex;align-items: center;justify-content: center;}
+.circle-load{border-top: 5px solid white;border-right: none;border-left: none;border-bottom: none;border-radius: 50%;animation: circle infinite linear 1s;}
+@keyframes circle{to{transform: rotate(0);}from{transform: rotate(360deg);}}
+.container-config-icon-gear
+{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    max-width: 90%;
+    margin: 0 auto;
+}
+.container-config-icon-gear > a
+{
+    text-decoration: none;
+    color: white;
+}
+.container-config-icon-gear > a > i
+{
+    font-size: 50px;
+    color: white;
+    animation: girar infinite linear 4s;
+}
+#logout-icon > label > img
+{
+    width: 100px;
+    height: 100px;
+}
+#logout-icon > label
+{
+    cursor: pointer;
+}
+@keyframes girar 
+{
+    to {
+        transform: rotate(0deg);
+    }
+    from
+    {
+        transform: rotate(360deg);
+    }
+}
+#trocarDeNivelDeAcessos
+{
+    animation: NivelDeAcessos 2s infinite linear;
+}
+@keyframes NivelDeAcessos {
+    to{
+        transform: rotate(360deg);
+    }
+    from
+    {
+        transform: rotate(0);
+    }
+}
+.icon-search
+{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+.icon-search > a
+{
+    display: block;
+    text-decoration: none;
+}
+.icon-search > a > i
+{
+    font-size: 30px;
+    color: white;
+}

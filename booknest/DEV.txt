@@ -1,0 +1,7 @@
+na view:
+{
+    path: \resources\views\Contribuinte-Home.blade.php,
+    progress: ([
+        na linha -> 597 , realize o AJAX para que podemos , adicionar o novo elemento ta tabela comentarios (no lugar de "não-vista") , adicionar ("vista") , para fazer a contagem de vistas e não vista.
+    ])
+}
